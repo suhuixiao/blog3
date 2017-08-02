@@ -2,26 +2,26 @@ var vue = new Vue({
 	el:'#vue',
 	data:{
 		height:'160 CM',
-        heightValue:['160','CM'],
+		heightValue:['160','CM'],
 	},
 	methods:{
-		//取消选择身高
-        cancelHeight:function(){
-            $('#height_input').val('')
-        },
-        //确认身高
-        ensureHeight:function(){
-            vue.height = $('#height_input').val();
-            vue.heightValue[0] = vue.height.replace(/ CM/,'')
-        },
-        //picker选择框数值范围
-        fanhui_arr:function(startNum,endNum,section) {
-            var _arr=[];
-            for(a=startNum;a<=endNum;a=a+section){
-                _arr.push(a);
-            }
-            return _arr;
-        },
+	        //取消选择身高
+        	cancelHeight:function(){
+		    $('#height_input').val('')
+		},
+		//确认身高
+		ensureHeight:function(){
+		    vue.height = $('#height_input').val();
+		    vue.heightValue[0] = vue.height.replace(/ CM/,'')
+		},
+		//picker选择框数值范围
+		fanhui_arr:function(startNum,endNum,section) {
+		    var _arr=[];
+		    for(a=startNum;a<=endNum;a=a+section){
+			_arr.push(a);
+		    }
+		    return _arr;
+		},
 	}
 })
 
@@ -37,7 +37,6 @@ $("#height_input").picker({
     cols: [{
             textAlign: 'center',
             values: vue.fanhui_arr(140,190,1)
-                //如果你希望显示文案和实际值不同，可以在这里加一个displayValues: [.....]
         },
         {
             textAlign: 'center',
