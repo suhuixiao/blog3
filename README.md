@@ -4,3 +4,5 @@
 优化后的picker可以设置默认选中的值
 
 打开picker,点击'取消'按钮,input清空;点击'确定'按钮,input显示为选中的值
+
+https://github.com/suhuixiao/blog3/blob/master/1.png
