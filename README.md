@@ -1,5 +1,5 @@
 # picker
-针对SUI中的picker进行优化（vue+SUI），作者：jh_su
+针对SUI中的picker进行优化（vue+SUI）
 
 优化后的picker可以设置默认选中的值
 
